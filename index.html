@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <!-- The core Firebase JS SDK is always required and must be listed first -->
+     <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-firestore.js"></script>
+
+    <title>HotCoalSystem</title>
+   
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="title">Restaurants Afiliados</h1>
+    <div class="content">
+        <form action="" id="content__add">
+           <input type="text" name="id" class="content__input" placeholder="Id del Restaurante">
+           <input type="text" name="name" class="content__input" placeholder="Nombre del Restaurante">
+           <input type="text" name="city" class="content__input" placeholder="Ubicacion del Restaurante">
+           <button>Agregar</button>
+        </form>
+        <ul id="content__list" class="content_list"></ul>
+    </div>
+
+      
+          
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#config-web-app -->
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyAdpoyOQbMdayWkk75XP_mXIy3OwsbUN6E",
+        authDomain: "prueba-hotcoal.firebaseapp.com",
+        databaseURL: "https://prueba-hotcoal.firebaseio.com",
+        projectId: "prueba-hotcoal",
+        storageBucket: "prueba-hotcoal.appspot.com",
+        messagingSenderId: "347722591691",
+        appId: "1:347722591691:web:0639aec90baaac38"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+    </script>
+    <script src="base.js"></script>
+</body>
+</html>
